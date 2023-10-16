@@ -1,0 +1,55 @@
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{libertine}
+\usepackage{inconsolata}
+\usepackage{xcolor}
+\usepackage{listings}
+%\usepackage{showframe}
+
+\definecolor{mygray}{gray}{0.90}
+\definecolor{mydarkgray}{gray}{0.30}
+\definecolor{mygreen}{rgb}{0.2,0.7,0}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{myblue}{rgb}{0,0,0.7}
+\definecolor{myred}{rgb}{0.7,0.2,0}
+
+\lstset{
+   language=c++,%
+   breaklines=true,%
+%    frame=tb,%
+   basicstyle=\small\ttfamily,%
+   commentstyle=\color{myred},%
+   showstringspaces=false,
+   numbers=none,
+%   xleftmargin=\parindent,
+%   xrightmargin=\parindent,
+   numberstyle=\small\color{myblue},
+   keywordstyle=\lst@ifdisplaystyle\bfseries\fi,
+   escapechar=\@,
+}
+\lstset{
+   morekeywords={size_t,dash,Array,NArray,Team,Pattern,init,
+        finalize,begin,end,rbegin,rend,lbegin,lend,local,at,HView,
+        hview,CYCLIC,BLOCKCYCLIC,BLOCKED,NONE,All,split,
+        Shared,Mutex,SizeSpec,DistSpec,ROW_MAJOR,COL_MAJOR,
+        GlobRef,GlobPtr,GlobIter,GlobMem,std,elem,size,extent,
+        acquire,release,is_local}
+        }
+
+\setlength{\footskip}{15pt}
+
+\newcommand{\lecture}{
+Praktikum im WS 2022/2023\\
+Quantitative Analyse von Hochleistungssystemen (LMU)\\
+Evaluation of Modern Architectures and Accelerators (TUM)\\~}
+\newcommand{\people}{Sergej Breiter, MSc., Minh Thanh Chung, MSc.,Amir Raoofy, MSc., Bengisu Elis,MSc., Dr.~Karl~Fürlinger,  Dr.~Josef Weidendorfer}
+
+
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{BEAST Praktikum, WS22/23}{}{Assignment \assignment}
+\firstpagefooter{}{Page \thepage~of~\numpages}{}
+\runningfooter{}{Page \thepage~of~\numpages}{}
+
